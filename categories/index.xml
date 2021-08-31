@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on sven.opsblog.de</title>
+    <link>https://sven.opsblog.de/categories/</link>
+    <description>Recent content in Categories on sven.opsblog.de</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Fri, 06 Jan 2017 14:16:59 +0000</lastBuildDate><atom:link href="https://sven.opsblog.de/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MSSQL</title>
+      <link>https://sven.opsblog.de/categories/mssql/</link>
+      <pubDate>Fri, 06 Jan 2017 14:16:59 +0000</pubDate>
+      
+      <guid>https://sven.opsblog.de/categories/mssql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C#</title>
+      <link>https://sven.opsblog.de/categories/c#/</link>
+      <pubDate>Thu, 10 Nov 2016 21:59:43 +0000</pubDate>
+      
+      <guid>https://sven.opsblog.de/categories/c#/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

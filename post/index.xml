@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on sven.opsblog.de</title>
+    <link>https://sven.opsblog.de/post/</link>
+    <description>Recent content in Posts on sven.opsblog.de</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Fri, 06 Jan 2017 14:16:59 +0000</lastBuildDate><atom:link href="https://sven.opsblog.de/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Server localdb – Mehrere Versionen verwalten</title>
+      <link>https://sven.opsblog.de/2017/01/06/sql-server-localdb-mehrere-versionen-verwalten/</link>
+      <pubDate>Fri, 06 Jan 2017 14:16:59 +0000</pubDate>
+      
+      <guid>https://sven.opsblog.de/2017/01/06/sql-server-localdb-mehrere-versionen-verwalten/</guid>
+      <description>&lt;p&gt;Vor einiger Zeit habe ich &lt;a href=&#34;http://frickelblog.de/2013/01/24/sql-server-2012-localdb/&#34;&gt;HIER&lt;/a&gt; schon mal etwas über SQLServer 2012 localdb geschrieben.&lt;br&gt;
+Mittlerweile gibt es von der localdb installation mehrere Versionen (Aktuell: 2012 / 2014 / 2016).&lt;/p&gt;
+&lt;p&gt;Um Herauszufinden welche Versionen auf dem System installiert sind, kann der Befehl „sqllocaldb versions“ genutzt werden:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;E:\Programme\cmder&amp;gt;sqllocaldb versions
+Microsoft SQL Server 2012 (11.0.5058.0)
+Microsoft SQL Server 2014 (12.0.4100.1)
+Microsoft SQL Server 2016 (13.0.1601.5)
+Microsoft SQL Server 2017 (14.0.1000.169)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Standardmäßig wird eine neue Datenbank-Instanz über den „Create“-Befehl mit der aktuelleren Version angelegt.&lt;br&gt;
+Möchte man eine Instanz mit der 2012er Version anlegen, geht dies so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;E:\Programme\cmder&amp;gt;sqllocaldb create SQL2012 11.0.5058.0
+LocalDB instance &amp;quot;SQL2012&amp;quot; created with version 11.0.5058.0.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Und für die 2014er Version so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;E:\Programme\cmder&amp;gt;sqllocaldb create SQL2014 12.0.4100.1
+LocalDB instance &amp;quot;SQL2014&amp;quot; created with version 12.0.4100.1.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Ebenfalls kann so auch explizit eine 2016er Instanz angelegt werden:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;E:\Programme\cmder&amp;gt;sqllocaldb create SQL2016 13.0.1601.5
+LocalDB instance &amp;quot;SQL2016&amp;quot; created with version 13.0.1601.5.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Oder für eine 2017er Instanz:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;E:\Programme\cmder&amp;gt;sqllocaldb create SQL2017 14.0.1000.169
+LocalDB instance &amp;quot;SQL2017&amp;quot; created with version 14.0.1000.169.
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vorstellung: RDLViewer</title>
+      <link>https://sven.opsblog.de/2016/11/10/vorstellung-rdlviewer/</link>
+      <pubDate>Thu, 10 Nov 2016 21:59:43 +0000</pubDate>
+      
+      <guid>https://sven.opsblog.de/2016/11/10/vorstellung-rdlviewer/</guid>
+      <description>&lt;p&gt;Hier möchte ich mal den RDLViewer vorstellen.&lt;br&gt;
+Im Prinzip macht er nichts anderes als Lokale SQL Server Reports mit integrierter Datenquelle im XML Format anzuzeigen.&lt;br&gt;
+Entwickelt wurde das ganze ursprünglich mal als Kostenfreie Reporting-Alternative für diverse interne Tools.&lt;br&gt;
+Ziel des ganzen war dabei möglichst einfach Berichtsdaten ausgeben – und aus diesen einen Bericht erstellen und anzeigen zu können.&lt;/p&gt;
+&lt;p&gt;Das ganze sieht dann z.B. mit dem Beispiel-Bericht (einer kleinen Rechnung) wie folgt aus:&lt;br&gt;
+&lt;img src=&#34;https://sven.opsblog.de/img/2016-11-10-vorstellung-rdlviewer/1_testbericht.jpg&#34; alt=&#34;img1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MarkdownEditor</title>
+      <link>https://sven.opsblog.de/2016/08/28/markdowneditor/</link>
+      <pubDate>Sun, 28 Aug 2016 15:46:31 +0000</pubDate>
+      
+      <guid>https://sven.opsblog.de/2016/08/28/markdowneditor/</guid>
+      <description>&lt;p&gt;Heutzutage scheint jeder seinen eigenen Markdown-Editor zu bauen..&lt;br&gt;
+Naja, das Projekt liegt schon länger auf meiner Platte rum – damals wusste ich noch nichts davon das es mittlerweile so viele Editoren für Markdown gibt.&lt;/p&gt;
+&lt;p&gt;Jedenfalls habe ich auch einen gebaut.&lt;br&gt;
+Hauptaugenmerkt dabei war:&lt;br&gt;
+– einfache Bedienung&lt;br&gt;
+– HTML-Vorschau&lt;br&gt;
+– Syntax Highlighting&lt;br&gt;
+– Halbwegs ansehnlich&lt;/p&gt;
+&lt;p&gt;Momentan ist dies eine WinForms anwendung, welche das &lt;a href=&#34;https://github.com/dennismagno/metroframework-modern-ui&#34;&gt;MetroFramework&lt;/a&gt; nutzt.&lt;br&gt;
+Die HTML Vorschau wird durch &lt;a href=&#34;https://github.com/lunet-io/markdig&#34;&gt;MarkDig&lt;/a&gt; gerendert, welcher ein wirklich phänomenaler MD2HTML Konverter darstellt – und für die Eingabe und das Syntax Highlighting habe ich die &lt;a href=&#34;https://github.com/PavelTorgashov/FastColoredTextBox&#34;&gt;FastColoredTextBox&lt;/a&gt; genutzt, welche ein paar RegEx´s von &lt;a href=&#34;https://gist.github.com/jbroadway/2836900&#34;&gt;SlimDown&lt;/a&gt; nutzt.&lt;/p&gt;
+&lt;p&gt;Das ganze sieht dann so im „Bearbeitungs-Modus“ aus:&lt;br&gt;
+&lt;img src=&#34;https://sven.opsblog.de/img/2016-08-28-markdowneditor/markdownEditor1.png&#34; alt=&#34;img1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

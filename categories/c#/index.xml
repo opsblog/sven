@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on sven.opsblog.de</title>
+    <link>https://sven.opsblog.de/categories/c#/</link>
+    <description>Recent content in C# on sven.opsblog.de</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Thu, 10 Nov 2016 21:59:43 +0000</lastBuildDate><atom:link href="https://sven.opsblog.de/categories/c#/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vorstellung: RDLViewer</title>
+      <link>https://sven.opsblog.de/2016/11/10/vorstellung-rdlviewer/</link>
+      <pubDate>Thu, 10 Nov 2016 21:59:43 +0000</pubDate>
+      
+      <guid>https://sven.opsblog.de/2016/11/10/vorstellung-rdlviewer/</guid>
+      <description>&lt;p&gt;Hier möchte ich mal den RDLViewer vorstellen.&lt;br&gt;
+Im Prinzip macht er nichts anderes als Lokale SQL Server Reports mit integrierter Datenquelle im XML Format anzuzeigen.&lt;br&gt;
+Entwickelt wurde das ganze ursprünglich mal als Kostenfreie Reporting-Alternative für diverse interne Tools.&lt;br&gt;
+Ziel des ganzen war dabei möglichst einfach Berichtsdaten ausgeben – und aus diesen einen Bericht erstellen und anzeigen zu können.&lt;/p&gt;
+&lt;p&gt;Das ganze sieht dann z.B. mit dem Beispiel-Bericht (einer kleinen Rechnung) wie folgt aus:&lt;br&gt;
+&lt;img src=&#34;https://sven.opsblog.de/img/2016-11-10-vorstellung-rdlviewer/1_testbericht.jpg&#34; alt=&#34;img1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MarkdownEditor</title>
+      <link>https://sven.opsblog.de/2016/08/28/markdowneditor/</link>
+      <pubDate>Sun, 28 Aug 2016 15:46:31 +0000</pubDate>
+      
+      <guid>https://sven.opsblog.de/2016/08/28/markdowneditor/</guid>
+      <description>&lt;p&gt;Heutzutage scheint jeder seinen eigenen Markdown-Editor zu bauen..&lt;br&gt;
+Naja, das Projekt liegt schon länger auf meiner Platte rum – damals wusste ich noch nichts davon das es mittlerweile so viele Editoren für Markdown gibt.&lt;/p&gt;
+&lt;p&gt;Jedenfalls habe ich auch einen gebaut.&lt;br&gt;
+Hauptaugenmerkt dabei war:&lt;br&gt;
+– einfache Bedienung&lt;br&gt;
+– HTML-Vorschau&lt;br&gt;
+– Syntax Highlighting&lt;br&gt;
+– Halbwegs ansehnlich&lt;/p&gt;
+&lt;p&gt;Momentan ist dies eine WinForms anwendung, welche das &lt;a href=&#34;https://github.com/dennismagno/metroframework-modern-ui&#34;&gt;MetroFramework&lt;/a&gt; nutzt.&lt;br&gt;
+Die HTML Vorschau wird durch &lt;a href=&#34;https://github.com/lunet-io/markdig&#34;&gt;MarkDig&lt;/a&gt; gerendert, welcher ein wirklich phänomenaler MD2HTML Konverter darstellt – und für die Eingabe und das Syntax Highlighting habe ich die &lt;a href=&#34;https://github.com/PavelTorgashov/FastColoredTextBox&#34;&gt;FastColoredTextBox&lt;/a&gt; genutzt, welche ein paar RegEx´s von &lt;a href=&#34;https://gist.github.com/jbroadway/2836900&#34;&gt;SlimDown&lt;/a&gt; nutzt.&lt;/p&gt;
+&lt;p&gt;Das ganze sieht dann so im „Bearbeitungs-Modus“ aus:&lt;br&gt;
+&lt;img src=&#34;https://sven.opsblog.de/img/2016-08-28-markdowneditor/markdownEditor1.png&#34; alt=&#34;img1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
